@@ -2,7 +2,11 @@
 
 use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
- 
+
+// For Default http://127.0.0.1:8000/
+//Route::get('/', function () {
+//    return redirect('/login');
+//});
  
 Route::get('/register', [AuthController::class, 'showRegister']);
 Route::post('/register', [AuthController::class, 'register']);
